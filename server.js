@@ -39,9 +39,9 @@ if (!data.choices) {
     return res.status(500).json({ error: data });
 }
 
-    res.json({
-        result: data.choices[0].message.content
-    });
+   res.json({
+    answer: data.choices[0].message.content
+});
 });
 
 // تشغيل السيرفر (آخر شيء)
