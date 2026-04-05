@@ -45,8 +45,10 @@ if (!data.choices) {
 });
 
 // تشغيل السيرفر (آخر شيء)
-app.listen(3000, () => {
-    console.log("http://localhost:3000");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log("Server running on port " + PORT);
 });
 
 const fs = require("fs");
@@ -67,9 +69,10 @@ app.post("/save", (req, res) => {
     }
 
 });
+const PORT = process.env.PORT || 3000;
 
-app.listen(3000, () => {
-    console.log("Server running on http://localhost:3000");
+app.listen(PORT, () => {
+    console.log("Server running on port " + PORT);
 });
 
 // جلب آخر ملف محفوظ
