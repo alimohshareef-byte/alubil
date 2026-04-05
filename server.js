@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-require("dotenv").config({ path: "ai.env" });
+require("dotenv").config(); // بدل path
 
 const app = express();
 
