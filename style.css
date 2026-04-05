@@ -1,0 +1,374 @@
+/* =========================
+   GENERAL
+========================= */
+body {
+    font-family: "Tajawal", sans-serif;
+    background: #f3f5f9;
+    margin: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+.top-header {
+    max-width: 1100px;   /* نفس عرض المحتوى */
+    margin: 20px auto;   /* توسيط */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+}
+
+/* يمين */
+.top-header .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-header .right img {
+    width: 120px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.sub {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* يسار */
+.top-header .left {
+    display: flex;
+    gap: 10px;
+}
+
+.save-btn {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.excel-btn {
+    background: #16a34a;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* =========================
+   TABS
+========================= */
+.tabs {
+    display: flex;
+    gap: 10px;
+    padding: 10px 30px;
+    overflow-x: auto;
+}
+
+.tab {
+    background: #eef2f7;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.tab span {
+    display: block;
+    font-size: 11px;
+    color: gray;
+}
+
+.tab.active {
+    background: #0f172a;
+    color: white;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+.progress-container {
+    margin: 20px 30px;
+    background: #e5e7eb;
+    height: 10px;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #111827;
+    border-radius: 20px;
+    width: 20%;
+}
+
+/* =========================
+   STATS
+========================= */
+.stats {
+    display: flex;
+    gap: 15px;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #eef2f7;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: right;
+}
+
+.card span {
+    font-size: 13px;
+    color: gray;
+}
+
+.card b {
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/* =========================
+   SECTION
+========================= */
+.section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 18px;
+    margin: 0 30px 30px;
+}
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* =========================
+   BANNER
+========================= */
+.section-banner {
+    background: linear-gradient(to left, #0f172a, #1e293b);
+    padding: 30px;
+    border-radius: 18px;
+    color: white;
+}
+
+/* =========================
+   QUESTION
+========================= */
+.question {
+    background: #f9fafc;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 20px;
+    border: 1px solid #eee;
+}
+
+.question-header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+}
+
+.question label {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* رقم السؤال */
+.q-num {
+    background: #ffe7b3;
+    border: 1px solid #f7d48a;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #7a5200;
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+textarea {
+    width: 95%;
+    min-height: 120px;
+    margin-top: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 15px;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* مساعد ذكي */
+.smart-btn {
+    background: #fff7ed;
+    border: 1px solid #f8bd7f;
+    color: #92400e;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.smart-btn:hover {
+    background: #ffedd5;
+}
+
+/* صوت */
+.voice-btn {
+    background: #eef2ff;
+    border: 1px solid #c7d2fe;
+    color: #1e3a8a;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.voice-btn:hover {
+    background: #e0e7ff;
+}
+
+/* =========================
+   NAV BUTTON
+========================= */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.btn-nav {
+    background: #111827;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.tabs {
+    max-width: 1100px;
+    margin: 10px auto;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.tab {
+    background: #eef2f7;
+    padding: 10px 15px;
+    border-radius: 14px;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab span {
+    display: block;
+    font-size: 11px;
+    color: gray;
+}
+
+/* المحور النشط */
+.tab.active {
+    background: #0f172a;
+    color: white;
+}
+/* =========================
+   STATS
+========================= */
+.stats {
+    max-width: 1100px;
+    margin: 20px auto;
+    display: flex;
+    gap: 15px;
+    direction: rtl;
+}
+
+/* الكرت */
+.card {
+    flex: 1;
+    background: #f8fafc;
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid #eef2f7;
+}
+
+/* العنوان */
+.card span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* الرقم */
+.card b {
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* ===== كرت نسبة الإنجاز ===== */
+.progress-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* نسبة */
+.percent {
+    color: #f59e0b;
+}
+
+/* الخلفية */
+.progress-bar-bg {
+    margin-top: 10px;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* التقدم */
+.progress-fill {
+    height: 100%;
+    background: #111827;
+    border-radius: 20px;
+    transition: 0.4s;
+}
